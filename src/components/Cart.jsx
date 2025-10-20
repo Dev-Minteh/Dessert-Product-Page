@@ -31,7 +31,7 @@ export default function Cart({cartItems,handleRemoveFromCart}) {
               className="text-gray px-2 py-1"
               onClick={() => handleRemoveFromCart(item)}
             >
-              <img src="\public\images\icon-remove-item.svg" />
+              <img src="/images/icon-remove-item.svg" />
             </button>
             </div>
             </div>

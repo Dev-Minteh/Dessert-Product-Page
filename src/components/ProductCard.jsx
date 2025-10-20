@@ -19,4 +19,27 @@ export default function ProductCard({ item, quantity, handleAddToCart, handleRem
   );
 }
 
+// export default function ProductCard({ item, quantity, handleAddToCart }) {
+//   return (
+//     <div className="p-1 w-full flex flex-col justify-between bg-white shadow-md rounded-md">
+//       <img
+//         src={item.image.thumbnail}
+//         alt={item.name}
+//         className="h-48 object-cover rounded-md"
+//       />
+//       <div className="mt-2">
+//         <p className="text-sm text-gray-500 font-medium">{item.category}</p>
+//         <h3 className="text-lg font-semibold text-[#3a1d0e]">{item.name}</h3>
+//         <p className="text-[#e76f51] font-semibold">${item.price.toFixed(2)}</p>
+//       </div>
+//       <button
+//         className="mt-2 bg-[#5e2b16] text-white px-4 py-1 rounded hover:bg-[#7b3f28]"
+//         onClick={() => handleAddToCart(item)}
+//       >
+//         Add to Cart
+//       </button>
+//     </div>  
+//   );
+// }
+
 
