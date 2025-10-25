@@ -129,9 +129,7 @@ function App() {
       </div>
 
       {/* Cart Section */}
-      {/* <div className="w-full md:w-1/4 mt-10 md:mt-0 md:ml-6"> */}
         <Cart cartItems={cartItems} handleRemoveFromCart={handleRemoveFromCart} />
-      {/* </div> */}
     </div>
   );
 }

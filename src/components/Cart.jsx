@@ -2,8 +2,7 @@ export default function Cart({cartItems,handleRemoveFromCart}) {
   const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
 
   const handleComfirmOrder = () => {
-    // Logic to handle order confirmation 
-    
+
     alert("Order confirmed!");
   };
   return (
@@ -14,7 +13,7 @@ export default function Cart({cartItems,handleRemoveFromCart}) {
          {cartItems.length === 0 ? (
           <>
            <p className="text-gray-500">No items in cart.</p>
-            <img src="public/images/illustration-empty-cart.svg" className="w-16 h-16 mx-auto my-4" alt="Empty Cart" />
+            <img src="/images/illustration-empty-cart.svg" className="w-16 h-16 mx-auto my-4" alt="Empty Cart" />
           </>
           ) : (
           
@@ -58,3 +57,4 @@ export default function Cart({cartItems,handleRemoveFromCart}) {
       </div>
   );
 }
+
